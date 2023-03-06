@@ -8,14 +8,25 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  flags: {
+    DEV_SSR : true
+  },
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Sashacorp`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `Sashacorp`,
+    siteUrl: `https://www.sashacorp.dev/`,
   },
   plugins: [
-    `gatsby-plugin-image`,
+    `gatsby-plugin-image`, "gatsby-plugin-sitemap",
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Philosopher:i7:latin', 'Montserrat:n6:n5:n4:n3:latin']
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
