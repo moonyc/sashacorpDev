@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
 const isBrowser = typeof window !== "undefined" 
 const Footer = () => {
     const classes = useStyles()
-    const matchesMD = useMediaQuery((theme) => theme.breakpoints.down('md'))
+    const matchesSM = useMediaQuery((theme) => theme.breakpoints.down('sm'))
     const socials = [
         {
             label: 'Twitter',
@@ -69,7 +69,7 @@ const Footer = () => {
             <Grid item>
                 <Typography variant='body2' classes={{root: classes.followUs}}>Follow us</Typography>
              </Grid>
-            <Grid item container direction={isBrowser && matchesMD ? 'column' : 'row'}>
+            <Grid item container direction={isBrowser && matchesSM ? 'column' : 'row'}>
              {socials.map(social => (
                  <Grid item>
                  <IconButton 
