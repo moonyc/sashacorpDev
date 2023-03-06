@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.common.offWhite
     },
     appBar: {
-        background: theme.palette.primary.main,
+        background: theme.palette.common.gradient,
         margin: 0
 
     },
