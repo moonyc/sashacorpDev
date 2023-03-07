@@ -11,12 +11,9 @@ import logoLarge from '../../images/logoLarge.png'
 
 const useStyles = makeStyles(theme => ({
     footer: {
-        background: theme.palette.common.gradient,
+        background: '#191825',
         padding: "2rem",
-        marginTop: '10rem',
-        [theme.breakpoints.down('sm')]:{
-            marginTop: '3rem'
-        },
+        
        }, 
     logoLarge: {
         height: '25rem',

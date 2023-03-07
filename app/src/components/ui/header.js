@@ -9,7 +9,7 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
-import { useMediaQuery } from '@material-ui/core';
+import { Typography, useMediaQuery } from '@material-ui/core';
 import { Link } from 'gatsby'
 
 // Assets
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.common.offWhite
     },
     appBar: {
-        background: theme.palette.common.gradient,
+        background:'#191825',
         margin: 0
 
     },
@@ -146,6 +146,7 @@ function Header () {
             <Toolbar>
                 <IconButton component={Link} to ="/" classes={{root: classes.logoContainer}}>
                     <img src={logo} alt="logo" className={classes.logo}/>
+                    <Typography variant="h4"> SASHACORP</Typography>
                 </IconButton>
                 
                 {matchesMD ? drawer : tabs}

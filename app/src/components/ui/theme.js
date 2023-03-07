@@ -46,8 +46,10 @@ const theme = createTheme({
         color: offBlack
     },
     h4: {
-        fontSize: '3rem',
-        color: offWhite
+        fontSize: '1.5rem',
+        fontWeight: 400,
+        color: offWhite,
+       
     },
     h5: {
         fontSize: '2.5rem',

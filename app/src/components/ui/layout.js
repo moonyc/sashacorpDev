@@ -13,12 +13,8 @@ import Header from "./header"
 import Footer from "./footer"
 
 const useStyles = makeStyles(theme =>({
-  spacer: {
-    height: '10rem',
-    [theme.breakpoints.down('sm')]: {
-      height: '6rem'
-    }
-  }
+  
+  
 }))
 
 const Layout = ({ children }) => {
@@ -36,7 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div className={classes.spacer}/>
+        
         <main>{children}</main>
         <Footer />
     </>

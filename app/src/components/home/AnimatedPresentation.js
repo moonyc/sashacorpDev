@@ -63,7 +63,7 @@ export default function AnimatetPresentation() {
     ref.current.forEach(clearTimeout)
     ref.current = []
     set([])
-    ref.current.push(setTimeout(() => set(['Wholesome', 'Web',]), 2000))
+    ref.current.push(setTimeout(() => set(['Wholesome', 'Web',]), 1000))
     ref.current.push(setTimeout(() => set(['Wholesome', 'Experiences']), 5000))
     ref.current.push(setTimeout(() => set(['Wholesome', 'Web', 'Experiences']), 8000))
   }, [])

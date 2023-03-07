@@ -9,8 +9,9 @@ import AnimatetPresentation from "../components/home/AnimatedPresentation"
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
-    height: '50vh',
-    padding: '5rem 0rem 10rem 0rem',
+    height: '100vh',
+    padding: '10rem 0rem 10rem 0rem',
+    backgroundColor: '#191825',
     [theme.breakpoints.down('md')]:{
       padding: '0rem 0rem 0rem 0rem',
       width: '100%',
@@ -38,11 +39,11 @@ const IndexPage = () => {
   return (
   <Layout>
     <Grid item container  justifyContent={isBrowser && matchesSM ? 'center': 'space-around'} alignItems="center" classes={{root: classes.mainContainer}}>
-    <Grid item>
+    {/* <Grid item>
     <Typography variant="h1" classes={{root: classes.text}}>
       <span>SASHA{matchesSM ? <br /> : null}CORP</span>
     </Typography>
-    </Grid>
+    </Grid> */}
     <Grid item>
       <AnimatetPresentation/>
     </Grid>
