@@ -13,7 +13,10 @@ const useStyles = makeStyles(theme => ({
     footer: {
         background: theme.palette.common.gradient,
         padding: "2rem",
-        marginTop: '10rem'
+        marginTop: '10rem',
+        [theme.breakpoints.down('sm')]:{
+            marginTop: '3rem'
+        },
        }, 
     logoLarge: {
         height: '25rem',

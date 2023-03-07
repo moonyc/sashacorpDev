@@ -34,7 +34,7 @@ const theme = createTheme({
     h1: {
         fontSize: '5rem',
         color: purple,
-        fontFamily: "Montserrat",
+        fontFamily: "Roboto",
         fontWeight: 700,
     },
     h2: {

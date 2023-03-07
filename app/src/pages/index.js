@@ -1,6 +1,6 @@
 import * as React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-
+import { useMediaQuery } from '@material-ui/core';
 import Layout from "../components/ui/layout"
 import Seo from "../components/seo"
 import { Typography } from "@material-ui/core"
@@ -12,12 +12,11 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
     padding: '5rem 0rem 10rem 0rem',
     [theme.breakpoints.down('md')]:{
-      padding: '3rem 0rem 3rem 0rem'
+      padding: '1rem 0rem 0rem 0rem',
+      width: '100%',
     }
   },
-  titleContainer: {
-
-  },
+ 
   text: {
     background: theme.palette.common.gradient,
     WebkitBackgroundClip: 'text',
@@ -31,12 +30,14 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
+const isBrowser = typeof window !== "undefined"
 
 const IndexPage = () => {
   const classes= useStyles()
+  const matchesSM = useMediaQuery((theme) => theme.breakpoints.down('sm'))
   return (
   <Layout>
-    <Grid item container  justifyContent="space-around" alignItems="center" classes={{root: classes.mainContainer}}>
+    <Grid item container  justifyContent={isBrowser && matchesSM ? 'center': 'space-around'} alignItems="center" classes={{root: classes.mainContainer}}>
     <Grid item>
     <Typography variant="h1" classes={{root: classes.text}}>
       SASHACORP
