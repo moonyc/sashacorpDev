@@ -5,7 +5,7 @@ import Layout from "../components/ui/layout"
 import Seo from "../components/seo"
 import { Typography } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
-import AnimatetPresentation from "../components/home/animatedPresentation"
+import AnimatetPresentation from "../components/home/AnimatedPresentation"
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
