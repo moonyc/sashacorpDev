@@ -5,14 +5,18 @@ import Layout from "../components/ui/layout"
 import Seo from "../components/seo"
 import { Typography } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
+import AnimatetPresentation from "../components/home/animatedPresentation"
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
     height: '50vh',
-    padding: '10rem 0rem 10rem 5rem',
+    padding: '5rem 0rem 10rem 0rem',
     [theme.breakpoints.down('md')]:{
-      padding: '10rem 0rem 10rem 2rem'
+      padding: '5rem 0rem 5rem 0rem'
     }
+  },
+  titleContainer: {
+
   },
   text: {
     background: theme.palette.common.gradient,
@@ -22,7 +26,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: '3.5rem'
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '2rem'
+      fontSize: '3rem'
     }
   }
 }))
@@ -32,10 +36,17 @@ const IndexPage = () => {
   const classes= useStyles()
   return (
   <Layout>
-    <Grid container  alignItems="center" classes={{root: classes.mainContainer}}>
+    <Grid item container  justifyContent="space-around" alignItems="center" classes={{root: classes.mainContainer}}>
+    <Grid item>
     <Typography variant="h1" classes={{root: classes.text}}>
       SASHACORP
     </Typography>
+    </Grid>
+    <Grid item>
+      <AnimatetPresentation/>
+    </Grid>
+
+   
     </Grid>
     
   </Layout>
