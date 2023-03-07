@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
     padding: '5rem 0rem 10rem 0rem',
     [theme.breakpoints.down('md')]:{
-      padding: '5rem 0rem 5rem 0rem'
+      padding: '3rem 0rem 3rem 0rem'
     }
   },
   titleContainer: {
