@@ -5,6 +5,7 @@ const darkPurple = "rgba(79,69,255,1)"
 const purple = "rgba(117,99,246,1) "
 const offWhite = "#E3DFFD"
 const offBlack = "#3F3B6C"
+const background= "#191825"
 const gradient = `
 linear-gradient( 194deg, rgba(180,149,231,1) 7%, 
 rgba(79,69,255,1) 28%,
@@ -26,20 +27,21 @@ const theme = createTheme({
         darkPurple,
         offBlack,
         offWhite,
-        gradient
+        gradient,
+        background
 
     }
 },
    typography: {
     h1: {
         fontSize: '5rem',
-        color: purple,
+        color: lightPurple,
         fontFamily: "Roboto",
         fontWeight: 700,
     },
     h2: {
         fontSize: '4rem',
-        color: darkPurple
+        color: '#fff'
     },
     h3: {
         fontSize: '3rem',
