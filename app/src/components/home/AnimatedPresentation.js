@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
         height:" 260px",
       },
     transitionsItem : {
+        fontFamily: 'Roboto',
         overflow: "hidden",
         width: "100%",
         color: "#fff",
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
         cursor: "pointer",
         lineHeight: "80px",
         [theme.breakpoints.down('sm')]: {
-            fontSize: '3rem'
+            fontSize: '2.7rem'
         }
     },
       
