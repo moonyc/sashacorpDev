@@ -12,11 +12,14 @@ import { makeStyles } from "@material-ui/core/styles"
 import Header from "./header"
 import Footer from "./footer"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme =>({
   spacer: {
-    height: '10rem'
+    height: '10rem',
+    [theme.breakpoints.down('sm')]: {
+      height: '6rem'
+    }
   }
-})
+}))
 
 const Layout = ({ children }) => {
   const classes = useStyles()

@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
     padding: '5rem 0rem 10rem 0rem',
     [theme.breakpoints.down('md')]:{
-      padding: '1rem 0rem 0rem 0rem',
+      padding: '0rem 0rem 0rem 0rem',
       width: '100%',
     }
   },
@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: '3.5rem'
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '3rem'
+      fontSize: '5rem'
     }
   }
 }))
@@ -40,7 +40,7 @@ const IndexPage = () => {
     <Grid item container  justifyContent={isBrowser && matchesSM ? 'center': 'space-around'} alignItems="center" classes={{root: classes.mainContainer}}>
     <Grid item>
     <Typography variant="h1" classes={{root: classes.text}}>
-      SASHACORP
+      <span>SASHA{matchesSM ? <br /> : null}CORP</span>
     </Typography>
     </Grid>
     <Grid item>
