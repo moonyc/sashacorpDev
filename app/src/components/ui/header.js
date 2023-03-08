@@ -145,7 +145,7 @@ function Header () {
         <AppBar elevation={0} position="absolute" classes={{root: classes.appBar}}>
             <Toolbar>
                 <IconButton component={Link} to ="/" classes={{root: classes.logoContainer}}>
-                    <img src={logo} alt="logo" className={classes.logo}/>
+                    {/* <img src={logo} alt="logo" className={classes.logo}/> */}
                     <Typography variant="h4"> SASHACORP</Typography>
                 </IconButton>
                 
