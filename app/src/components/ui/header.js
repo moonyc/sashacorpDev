@@ -76,7 +76,7 @@ function Header () {
 
     const actions = [
         // {icon: search, alt: "string", visible: true, onClick: () => console.log("search")}, 
-        {icon: cat, alt: "cats", visible: !matchesMD, link: "/cats"},
+        {icon: cat, alt: "cats", visible: !matchesMD, link: "/"},
         {icon: menu, alt: 'menu', visible: matchesMD, onClick: () => setDrawerOpen(true)}
         ]
 
