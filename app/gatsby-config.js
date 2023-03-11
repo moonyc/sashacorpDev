@@ -18,6 +18,7 @@ module.exports = {
     siteUrl: `https://www.sashacorp.dev/`,
   },
   plugins: [
+    " gatsby-plugin-remove-serviceworker",
     `gatsby-plugin-image`, "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-netlify`,
