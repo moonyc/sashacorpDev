@@ -7,15 +7,12 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { makeStyles } from "@material-ui/core/styles"
+
 
 import Header from "./header"
 import Footer from "./footer"
 
-const useStyles = makeStyles(theme =>({
-  
-  
-}))
+
 
 const Layout = ({ children }) => {
   const classes = useStyles()

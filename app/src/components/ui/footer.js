@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
            margin: 0,
         },
     }
-}, {index: 1}))
+}))
 
 const isBrowser = typeof window !== "undefined" 
 const Footer = () => {
