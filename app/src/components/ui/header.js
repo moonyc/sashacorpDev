@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "1.2rem",
         fontWeight: 400
     },
-}))
+}, {index: 1}))
 const isBrowser = typeof window !== "undefined"
 
 function Header () {
