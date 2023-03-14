@@ -25,8 +25,10 @@ const useStyles = makeStyles(theme => ({
           }
     },
     followUs:{
+        ...theme.typography.h1,
+        textTransform: 'uppercase',
        color: '#fff',
-       fontWeight: 500,
+       fontWeight: 900,
        [theme.breakpoints.down('md')]: {
         fontSize: '1.5rem'
        }
