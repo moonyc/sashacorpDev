@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     footer: {
        marginTop: '10vh',
         padding: "2rem",
-        
+        bottom: 0,
        }, 
     logoLarge: {
         height: '25rem',
