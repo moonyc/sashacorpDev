@@ -21,16 +21,19 @@ const useStyles = makeStyles(theme => ({
             height: '20rem'
           },
         [theme.breakpoints.down('sm')]:{
-            height: '10rem'
+            height: '8rem'
           }
     },
     followUs:{
         ...theme.typography.h1,
-        textTransform: 'uppercase',
+       fontSize: '4rem',
        color: '#fff',
-       fontWeight: 900,
+       fontWeight: 700,
        [theme.breakpoints.down('md')]: {
         fontSize: '1.5rem'
+       },
+       [theme.breakpoints.down('sm')]: {
+        fontSize: '1.1rem'
        }
 
     },

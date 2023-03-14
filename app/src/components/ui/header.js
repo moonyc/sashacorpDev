@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     icon: {
         height: "2.5rem",
         width: "2.5rem",
-        marginRight: "auto"
+        marginLeft: 'auto',
     },
    
     drawer: {
