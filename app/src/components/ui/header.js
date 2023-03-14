@@ -33,7 +33,11 @@ const useStyles = makeStyles((theme) => ({
         marginRight: 'auto'
        }
     },
-   
+   toolbar: {
+      display:'flex',
+      flexDirection:'row',
+      justifyContent: 'space-between'
+   },
     tabs: {
         marginLeft: 'auto',
         marginRight: 'auto'
@@ -141,7 +145,7 @@ function Header () {
     
     return (
         <AppBar elevation={0} position="absolute" color="transparent">
-            <Toolbar>
+            <Toolbar classes={classes.toolbar}>
                 <Button component={Link} to ="/" variant="text" classes={{text: classes.logoButtonText, root: classes.logoButtonContainer}}>
                    SASHACORP
                 </Button>
