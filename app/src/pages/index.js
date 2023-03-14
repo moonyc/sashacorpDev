@@ -8,7 +8,7 @@ import AnimatetPresentation from "../components/home/AnimatedPresentation"
 const useStyles = makeStyles(theme => ({
   mainContainer: {
     height: '100vh',
-    padding: '20rem 20rem 20rem 20rem',
+    padding: '5rem 20rem 20rem 20rem',
     backgroundColor: '#191825',
     [theme.breakpoints.down('md')]:{
       padding: '1rem 0rem 1rem 0rem',
