@@ -11,7 +11,7 @@ import logoLarge from '../../images/sashacorp.png'
 
 const useStyles = makeStyles(theme => ({
     footer: {
-       
+       marginTop: '10vh',
         padding: "2rem",
         
        }, 
