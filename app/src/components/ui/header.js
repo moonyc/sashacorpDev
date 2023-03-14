@@ -29,6 +29,8 @@ const useStyles = makeStyles((theme) => ({
       ...theme.typography.h4,
     },
     logoButtonContainer: {
+        backgroundColor: 'transparent',
+        marginRight: 'auto',
        [theme.breakpoints.down('md')]: {
         marginRight: 'auto'
        }
@@ -44,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     },
     icon: {
         height: "2.5rem",
-        width: "2.5rem"
+        width: "2.5rem",
+        marginRight: "auto"
     },
    
     drawer: {
