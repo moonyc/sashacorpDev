@@ -146,7 +146,7 @@ function Header () {
     return (
         <AppBar elevation={0} position="absolute" color="transparent">
             <Toolbar classes={classes.toolbar}>
-                <Button component={Link} to ="/" variant="text" classes={{text: classes.logoButtonText, root: classes.logoButtonContainer}}>
+                <Button component={Link} to ="/" text classes={{text: classes.logoButtonText, root: classes.logoButtonContainer}}>
                    SASHACORP
                 </Button>
                 
