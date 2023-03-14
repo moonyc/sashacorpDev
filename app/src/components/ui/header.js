@@ -4,12 +4,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, useMediaQuery } from '@material-ui/core';
+import { useMediaQuery } from '@material-ui/core';
 import { Link } from 'gatsby'
 
 // Assets
@@ -23,13 +24,14 @@ const useStyles = makeStyles((theme) => ({
     coloredIndicator: {
         backgroundColor: theme.palette.common.offWhite
     },
-    appBar: {
-        background:'#191825',
-        margin: 0
-
+    
+    logoButtonText : {
+      ...theme.typography.h4,
     },
-    logo: {
-        height: '4rem'
+    logoButtonContainer: {
+       [theme.breakpoints.down('md')]: {
+        marginRight: 'auto'
+       }
     },
    
     tabs: {
@@ -40,12 +42,7 @@ const useStyles = makeStyles((theme) => ({
         height: "2.5rem",
         width: "2.5rem"
     },
-    logoContainer: {
-        [theme.breakpoints.down('md')]: {
-            marginRight: "auto",
-            
-        }
-    },
+   
     drawer: {
         backgroundColor: theme.palette.secondary.main
     },
@@ -55,7 +52,8 @@ const useStyles = makeStyles((theme) => ({
     tab: {
         ...theme.typography.body1,
         fontSize: "1.2rem",
-        fontWeight: 400
+        fontWeight: 400,
+        color:'#fff'
     },
 }))
 const isBrowser = typeof window !== "undefined"
@@ -142,12 +140,11 @@ function Header () {
   
     
     return (
-        <AppBar elevation={0} position="absolute" classes={{root: classes.appBar}}>
+        <AppBar elevation={0} position="absolute" color="transparent">
             <Toolbar>
-                <IconButton component={Link} to ="/" classes={{root: classes.logoContainer}}>
-                    {/* <img src={logo} alt="logo" className={classes.logo}/> */}
-                    <Typography variant="h4"> SASHACORP</Typography>
-                </IconButton>
+                <Button component={Link} to ="/" classes={{text: classes.logoButtonText, root: classes.logoButtonContainer}}>
+                   SASHACORP
+                </Button>
                 
                 {matchesMD ? drawer : tabs}
                 {actions.map(action => 

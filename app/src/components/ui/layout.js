@@ -7,23 +7,30 @@
 
 import * as React from "react"
 
-
+import { makeStyles } from "@material-ui/core/styles"
 
 import Header from "./header"
 import Footer from "./footer"
 
+const useStyles = makeStyles(theme => ({
+  majorContainer: {
+    backgroundColor: '#191825',
+    padding: 0,
+    margin: 0,
+  }
+}))
 
 
 const Layout = ({ children }) => {
- 
+const classes = useStyles() 
 
   return (
-    <>
+    <div className={classes.majorContainer}>
       <Header/>
         
         <main>{children}</main>
         <Footer />
-    </>
+    </div>
   )
 }
 
