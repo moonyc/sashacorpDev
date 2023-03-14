@@ -1,15 +1,13 @@
 import * as React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { useMediaQuery } from '@material-ui/core';
 import Layout from "../components/ui/layout"
 import Seo from "../components/seo"
-import { Typography } from "@material-ui/core"
-import Grid from "@material-ui/core/Grid"
+
 import AnimatetPresentation from "../components/home/AnimatedPresentation"
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
-    height: '100vh',
+   
     padding: '10rem 0rem 10rem 0rem',
     backgroundColor: '#191825',
     [theme.breakpoints.down('md')]:{
@@ -18,38 +16,21 @@ const useStyles = makeStyles(theme => ({
     }
   },
  
-  text: {
-    background: theme.palette.common.gradient,
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-    [theme.breakpoints.down('md')]: {
-      fontSize: '3.5rem'
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '5rem'
-    }
-  }
 }))
 
-const isBrowser = typeof window !== "undefined"
+// const isBrowser = typeof window !== "undefined"
 
 const IndexPage = () => {
   const classes= useStyles()
-  const matchesSM = useMediaQuery((theme) => theme.breakpoints.down('sm'))
+ 
   return (
   <Layout>
-    <Grid item container  justifyContent={isBrowser && matchesSM ? 'center': 'space-around'} alignItems="center" classes={{root: classes.mainContainer}}>
-    {/* <Grid item>
-    <Typography variant="h1" classes={{root: classes.text}}>
-      <span>SASHA{matchesSM ? <br /> : null}CORP</span>
-    </Typography>
-    </Grid> */}
-    <Grid item>
-      <AnimatetPresentation/>
-    </Grid>
+    <div classes={{root: classes.mainContainer}}>
+        <AnimatetPresentation/>
+    </div>
 
    
-    </Grid>
+   
     
   </Layout>
 )}

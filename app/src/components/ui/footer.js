@@ -7,7 +7,7 @@ import { useMediaQuery } from '@material-ui/core';
 import twitter from '../../images/twitter.svg'
 import linkedin from '../../images/linkedin.svg'
 import github from '../../images/github.svg'
-import logoLarge from '../../images/logoLarge.png'
+import logoLarge from '../../images/sashacorp.png'
 
 const useStyles = makeStyles(theme => ({
     footer: {

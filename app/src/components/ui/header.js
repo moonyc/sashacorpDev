@@ -13,10 +13,10 @@ import { Typography, useMediaQuery } from '@material-ui/core';
 import { Link } from 'gatsby'
 
 // Assets
-import search from '../../images/search.svg'
+//import search from '../../images/search.svg'
 import cat from '../../images/cat.svg'
 import menu from '../../images/menu.svg'
-import logo from '../../images/logo.png'
+//import logo from '../../images/logo.png'
 
 
 const useStyles = makeStyles((theme) => ({

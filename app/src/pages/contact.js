@@ -1,13 +1,13 @@
 
-import React, { useState } from "react"
+import React from "react"
 import Layout from "../components/ui/layout"
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 // import  TextField  from "@material-ui/core/TextField"
 // import { InputAdornment } from "@material-ui/core"
 // import clsx from 'clsx'
-import Button from '@material-ui/core/Button'
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+//import Button from '@material-ui/core/Button'
+import { makeStyles } from "@material-ui/core/styles"
 // import validate from "../components/ui/validate"
 import { useMediaQuery } from '@material-ui/core'
 
@@ -16,7 +16,7 @@ import address from '../images/address.svg'
 
 import Email from '../images/EmailAdornment.js'
 // import send from '../images/send.svg'
-import nameAdornment from '../images/kitty.svg'
+// import nameAdornment from '../images/kitty.svg'
 import PhoneAdornment from '../images/PhoneAdornment'
 
 const useStyles = makeStyles(theme =>  ({
@@ -163,47 +163,47 @@ const useStyles = makeStyles(theme =>  ({
 
 const ContactPage = () => {
   const classes = useStyles()
-  const theme = useTheme()
+
   const matchesMD = useMediaQuery(theme => theme.breakpoints.down('md'))
   const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'))
 
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    phoneNumber: "",
-    message: ""
-  })
-  const [errors, setErrors] = useState({})
+  // const [values, setValues] = useState({
+  //   name: "",
+  //   email: "",
+  //   phoneNumber: "",
+  //   message: ""
+  // })
+  // const [errors, setErrors] = useState({})
 
-  const fields = {
-    name: {
-      helperText: 'you must enter a name',
-      placeholder: 'Name',
-      adornment:  <img src={nameAdornment} alt="name"/>
-    },
-    email: {
-      helperText: 'invalid email',
-      placeholder: 'Email',
-      adornment: (<div className={classes.emailAdornment}>
-        <Email color={theme.palette.secondary.main}/>
-        </div>)
-    },
-    phoneNumber: {
-      helperText: 'invalid phone number',
-      placeholder: 'Phone Number',
-      adornment: (<div className={classes.PhoneAdornment}>
-        <PhoneAdornment color={theme.palette.secondary.main}/>
-       </div>)
-    },
-    message: {
-      helperText: 'you must enter a message',
-      placeholder: 'Message',
-      inputClasses: {
-        multiline: classes.multiline, 
-        error: classes.multilineError
-      }
-    }
-  }
+  // const fields = {
+  //   name: {
+  //     helperText: 'you must enter a name',
+  //     placeholder: 'Name',
+  //     adornment:  <img src={nameAdornment} alt="name"/>
+  //   },
+  //   email: {
+  //     helperText: 'invalid email',
+  //     placeholder: 'Email',
+  //     adornment: (<div className={classes.emailAdornment}>
+  //       <Email color={theme.palette.secondary.main}/>
+  //       </div>)
+  //   },
+  //   phoneNumber: {
+  //     helperText: 'invalid phone number',
+  //     placeholder: 'Phone Number',
+  //     adornment: (<div className={classes.PhoneAdornment}>
+  //       <PhoneAdornment color={theme.palette.secondary.main}/>
+  //      </div>)
+  //   },
+  //   message: {
+  //     helperText: 'you must enter a message',
+  //     placeholder: 'Message',
+  //     inputClasses: {
+  //       multiline: classes.multiline, 
+  //       error: classes.multilineError
+  //     }
+  //   }
+  // }
 
   const info = [{
     label: <span>Turin, To {matchesXS ? <br /> : null} 10144, Italy </span>,
@@ -223,7 +223,7 @@ const ContactPage = () => {
    }
     
 ]
-  const disabled = Object.keys(errors).some(error=> errors[error] === true) || Object.keys(errors).length !== 4
+  // const disabled = Object.keys(errors).some(error=> errors[error] === true) || Object.keys(errors).length !== 4
   return (
     <Layout>
       <Grid 
