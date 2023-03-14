@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     
     logoButtonText : {
       ...theme.typography.h4,
+      backgroundColor: 'transparent',
     },
     logoButtonContainer: {
         backgroundColor: 'transparent',
